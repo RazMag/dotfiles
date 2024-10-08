@@ -48,14 +48,19 @@
   # Mac system defaults
   system.defaults = {
     dock = {
-      autohide = false;
+      autohide = true;
       orientation = "left";
       show-recents = false;
       tilesize = 45;
       magnification = false;
       persistent-apps = [
         "/Applications/Zen Browser.app"
-        
+        "/Applications/Webex.app"
+        "/Applications.Slack.app"
+        pkgs.vscode
+        pkgs.wezterm
+        "/Applications/Proton Pass.app"
+        pkgs.spotify
       ];
     };
     finder = {
