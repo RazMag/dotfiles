@@ -16,9 +16,9 @@
     nix-homebrew = {
       url = "github:zhaofengli-wip/nix-homebrew";
     };
-    # mac-app-util = {
-    #   url = "github:hraban/mac-app-util";
-    # };
+    mac-app-util = {
+      url = "github:hraban/mac-app-util";
+    };
   };
 
   outputs =
@@ -28,7 +28,7 @@
       nix-darwin,
       home-manager,
       nix-homebrew,
-      # mac-app-util,
+      mac-app-util,
     }:
     {
       # Build darwin flake using:
@@ -38,16 +38,16 @@
           system = "aarch64-darwin";
           modules = [
             ./darwin/configuration.nix
-            # mac-app-util.darwinModules.default
+            mac-app-util.darwinModules.default
             home-manager.darwinModules.home-manager
             {
               home-manager = {
                 backupFileExtension = "bkup";
                 useGlobalPkgs = true;
                 users.rmagori = import ./home-manager/home.nix;
-                # sharedModules = [
-                #   mac-app-util.homeManagerModules.default
-                # ];
+                sharedModules = [
+                  mac-app-util.homeManagerModules.default
+                ];
               };
               users.users.rmagori.home = "/Users/rmagori";
             }

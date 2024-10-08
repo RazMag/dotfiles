@@ -48,7 +48,7 @@
   # Mac system defaults
   system.defaults = {
     dock = {
-      autohide = true;
+      autohide = false;
       orientation = "left";
       show-recents = false;
       tilesize = 45;
@@ -56,11 +56,12 @@
       persistent-apps = [
         "/Applications/Zen Browser.app"
         "/Applications/Webex.app"
-        "/Applications.Slack.app"
-        pkgs.vscode
-        pkgs.wezterm
+        "/Applications/Slack.app"
+        "/Users/rmagori/Applications/Home Manager Apps/Visual Studio Code.app"
+        "/Users/rmagori/Applications/Home Manager Apps/WezTerm.app"
+        "/Users/rmagori/Applications/Home Manager Apps/Obsidian.app"
+        "/Users/rmagori/Applications/Home Manager Apps/Spotify.app"
         "/Applications/Proton Pass.app"
-        pkgs.spotify
       ];
     };
     finder = {
