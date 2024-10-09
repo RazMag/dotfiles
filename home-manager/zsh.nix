@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, flakeName, ... }:
 
 {
   programs.zsh = {
@@ -18,7 +18,7 @@
       ll = "ls -l";
       bat = "cat";
       grep = "rg";
-      upgrade = "darwin-rebuild switch --flake ~/.config/nix#macbook";
+      upgrade = "darwin-rebuild switch --flake ~/.config/nix#${flakeName}";
       ".." = "cd ..";
     };
   };

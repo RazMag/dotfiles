@@ -31,6 +31,7 @@
       pkgs.wireguard-tools
       pkgs.jetbrains.pycharm-professional
       pkgs.docker
+      pkgs.nil
     ];
   };
 

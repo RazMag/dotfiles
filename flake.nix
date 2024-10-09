@@ -48,6 +48,10 @@
                 sharedModules = [
                   mac-app-util.homeManagerModules.default
                 ];
+                extraSpecialArgs = {
+                  flakeName = "macbook";
+                  workMachine = true;
+                };
               };
               users.users.rmagori.home = "/Users/rmagori";
             }
