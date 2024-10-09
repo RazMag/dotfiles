@@ -57,6 +57,7 @@
         "/Applications/Zen Browser.app"
         "/Applications/Webex.app"
         "/Applications/Slack.app"
+        "/Applications/Microsoft Outlook.app"
         "/Users/rmagori/Applications/Home Manager Apps/Visual Studio Code.app"
         "/Users/rmagori/Applications/Home Manager Apps/WezTerm.app"
         "/Users/rmagori/Applications/Home Manager Apps/Obsidian.app"
