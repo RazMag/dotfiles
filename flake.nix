@@ -57,7 +57,6 @@
                   workMachine = true;
                   gui = true;
                   mac = true;
-                  wsl = false;
                 };
               };
               users.users.rmagori.home = "/Users/rmagori";
@@ -96,7 +95,6 @@
                   workMachine = false;
                   gui = false;
                   mac = false;
-                  wsl = true;
                 };
               };
             }
