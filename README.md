@@ -7,9 +7,10 @@ This is my private flake configuration for my computers
 
 ## Outputs
 Flake outputs:
+```
 .
 ├───darwinConfigurations: unknown (nix-darwin configuration)
 ├───darwinPackages: unknown (nix-darwin default included output)
 └───nixosConfigurations
     └───wsl: NixOS configuration
-
+```
