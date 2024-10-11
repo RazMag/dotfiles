@@ -19,6 +19,9 @@
     mac-app-util = {
       url = "github:hraban/mac-app-util";
     };
+    nixos-wsl = {
+      url = "github:nix-community/NixOS-WSL/main";
+    };
   };
 
   outputs =
@@ -29,6 +32,7 @@
       home-manager,
       nix-homebrew,
       mac-app-util,
+      nixos-wsl
     }:
     {
       # Build darwin flake using:
@@ -51,6 +55,9 @@
                 extraSpecialArgs = {
                   flakeName = "macbook";
                   workMachine = true;
+                  gui = true;
+                  mac = true;
+                  wsl = false;
                 };
               };
               users.users.rmagori.home = "/Users/rmagori";
@@ -72,6 +79,30 @@
         };
       };
 
+      nixosConfigurations = {
+        "wsl" = nixpkgs.lib.nixosSystem {
+          system = "x86_64-linux";
+          modules = [
+            nixos-wsl.nixosModules.default
+            ./nixos-wsl/configuration.nix
+            home-manager.nixosModules.home-manager 
+            {
+              home-manager = {
+                useGlobalPkgs = true;
+                useUserPackages = true;
+                users.raz = import ./home-manager/home.nix;
+                extraSpecialArgs = {
+                  flakeName = "wsl";
+                  workMachine = false;
+                  gui = false;
+                  mac = false;
+                  wsl = true;
+                };
+              };
+            }
+          ];
+        };
+      };
       # Expose the package set, including overlays, for convenience.
       darwinPackages = self.darwinConfigurations."macbook".pkgs;
     };
