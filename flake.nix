@@ -54,9 +54,11 @@
                 ];
                 extraSpecialArgs = {
                   flakeName = "macbook";
-                  workMachine = true;
-                  gui = true;
-                  mac = true;
+                  attributes = [
+                    "work"
+                    "gui"
+                    "mac"
+                  ];
                 };
               };
               users.users.rmagori.home = "/Users/rmagori";
@@ -92,9 +94,7 @@
                 users.raz = import ./home-manager/home.nix;
                 extraSpecialArgs = {
                   flakeName = "wsl";
-                  workMachine = false;
-                  gui = false;
-                  mac = false;
+                  attributes = [];
                 };
               };
             }

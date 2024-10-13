@@ -1,7 +1,7 @@
-{ lib, pkgs, gui, ...}:
+{ lib, pkgs, attributes, ...}:
 
 # Packages to install on machines with a GUI
-if gui then {
+if builtins.elem "gui" attributes then {
   imports = [
     ./configs/wezterm.nix
   ];

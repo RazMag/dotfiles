@@ -1,6 +1,6 @@
-{ lib, pkgs, mac, ... }:
+{ lib, pkgs, attributes, ... }:
 
-if mac then {
+if builtins.elem "mac" attributes then {
   home = {
     packages = [
       pkgs.ice-bar

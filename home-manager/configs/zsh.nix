@@ -1,6 +1,6 @@
 {
   pkgs,
-  mac,
+  attributes,
   flakeName,
   ...
 }:
@@ -24,7 +24,7 @@
       bat = "cat";
       grep = "rg";
       upgrade =
-        if mac then
+        if builtins.elem "mac" attributes then
           "darwin-rebuild switch --flake ~/.config/nix#${flakeName}"
         else
           "sudo nixos-rebuild switch --flake ~/.config/nix#${flakeName}";
