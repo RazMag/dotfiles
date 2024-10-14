@@ -22,6 +22,9 @@
       pkgs.nil
       pkgs.kubectl
       pkgs.docker
+      # Python
+      pkgs.python3
+      pkgs.virtualenv
     ];
   };
 
