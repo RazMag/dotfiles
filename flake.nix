@@ -32,7 +32,7 @@
       home-manager,
       nix-homebrew,
       mac-app-util,
-      nixos-wsl
+      nixos-wsl,
     }:
     {
       # Build darwin flake using:
@@ -53,6 +53,7 @@
                   mac-app-util.homeManagerModules.default
                 ];
                 extraSpecialArgs = {
+                  inherit inputs;
                   flakeName = "macbook";
                   attributes = [
                     "work"
@@ -93,6 +94,7 @@
                 useUserPackages = true;
                 users.raz = import ./home-manager/home.nix;
                 extraSpecialArgs = {
+                  inherit inputs;
                   flakeName = "wsl";
                   attributes = [];
                 };
@@ -102,6 +104,6 @@
         };
       };
       # Expose the package set, including overlays, for convenience.
-      darwinPackages = self.darwinConfigurations."macbook".pkgs;
+      # darwinPackages = self.darwinConfigurations."macbook".pkgs;
     };
 }
