@@ -40,5 +40,10 @@
     ripgrep = {
       enable = true;
     };
+    zoxide = {
+      enable = true;
+      enableZshIntegration = true;
+      options = [ "--cmd cd" ];
+    };
   };
 }
