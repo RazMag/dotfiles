@@ -102,6 +102,25 @@
             }
           ];
         };
+        "pedro" = nixpkgs.lib.nixosSystem {
+          system = "x86_64-linux";
+          modules = [
+            ./nixos/configuration.nix
+            home-manager.nixosModules.home-manager 
+            {
+              home-manager = {
+                useGlobalPkgs = true;
+                useUserPackages = true;
+                users.raz = import ./home-manager/home.nix;
+                extraSpecialArgs = {
+                  inherit inputs;
+                  flakeName = "pedro";
+                  attributes = ["gui"];
+                };
+              };
+            }
+          ];
+        };
       };
       # Expose the package set, including overlays, for convenience.
       # darwinPackages = self.darwinConfigurations."macbook".pkgs;
