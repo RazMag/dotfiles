@@ -60,8 +60,8 @@
         "/Applications/Microsoft Outlook.app"
         "/Users/rmagori/Applications/Home Manager Apps/Visual Studio Code.app"
         "/Users/rmagori/Applications/Home Manager Apps/WezTerm.app"
-        "/Users/rmagori/Applications/Home Manager Apps/Obsidian.app"
         "/Users/rmagori/Applications/Home Manager Apps/Spotify.app"
+        "/Users/rmagori/Applications/Home Manager Apps/Logseq.app"
         "/Applications/Proton Pass.app"
       ];
     };

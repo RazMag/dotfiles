@@ -9,7 +9,7 @@ if builtins.elem "gui" attributes then {
   home = {
     packages = [
       pkgs.spotify
-      pkgs.obsidian
+      pkgs.logseq
     ];
   };
 
