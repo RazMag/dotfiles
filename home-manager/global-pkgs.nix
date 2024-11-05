@@ -22,6 +22,7 @@
       pkgs.nil
       pkgs.kubectl
       pkgs.docker
+      pkgs.linode-cli
       # Python
       pkgs.python3
       pkgs.virtualenv
