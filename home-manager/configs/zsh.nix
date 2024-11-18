@@ -21,7 +21,7 @@
     shellAliases = {
       ls = "ls --color";
       ll = "ls -l";
-      bat = "cat";
+      cat = "bat";
       grep = "rg";
       upgrade =
         if builtins.elem "mac" attributes then
