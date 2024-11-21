@@ -16,6 +16,7 @@
       pkgs.wireguard-tools
       pkgs.fzf
       pkgs.wget
+      pkgs.btop
       # Dev tools
       pkgs.nixfmt-rfc-style
       pkgs.opentofu
