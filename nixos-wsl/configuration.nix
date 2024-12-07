@@ -21,6 +21,12 @@
     };
     zsh.enable = true;
   };
+
+  environment.systemPackages = with pkgs; [
+    zsh
+  ];
+
+  environment.shells = with pkgs; [ zsh ];
   users.defaultUserShell = pkgs.zsh;
 
   # This value determines the NixOS release from which the default
