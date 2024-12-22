@@ -8,6 +8,8 @@ if builtins.elem "mac" attributes then {
       pkgs.rectangle # Window manager
       pkgs.jetbrains.pycharm-professional # Work IDE
       pkgs.colima # Docker runtime
+      pkgs.postman
+      pkgs.bun
     ];
   };
 }

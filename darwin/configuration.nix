@@ -34,6 +34,9 @@
       "middleclick"
       "karabiner-elements"
       "zen-browser"
+      "eloston-chromium"
+      "nosqlbooster-for-mongodb"
+      "windows-app"
     ];
     onActivation = {
       cleanup = "zap";
@@ -61,7 +64,6 @@
         "/Users/rmagori/Applications/Home Manager Apps/Visual Studio Code.app"
         "/Users/rmagori/Applications/Home Manager Apps/WezTerm.app"
         "/Users/rmagori/Applications/Home Manager Apps/Spotify.app"
-        "/Users/rmagori/Applications/Home Manager Apps/Logseq.app"
         "/Applications/Proton Pass.app"
       ];
     };

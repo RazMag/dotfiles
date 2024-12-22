@@ -19,8 +19,8 @@
       pkgs.btop
       # Dev tools
       pkgs.nixfmt-rfc-style
-      pkgs.opentofu
       pkgs.nil
+      pkgs.opentofu
       pkgs.kubectl
       pkgs.docker
       pkgs.linode-cli
