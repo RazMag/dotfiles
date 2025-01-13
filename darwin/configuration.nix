@@ -37,6 +37,10 @@
       "eloston-chromium"
       "nosqlbooster-for-mongodb"
       "windows-app"
+      "ghostty"
+    ];
+    brews = [
+      "node"
     ];
     onActivation = {
       cleanup = "zap";
