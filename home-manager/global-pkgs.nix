@@ -24,6 +24,7 @@
       pkgs.kubectl
       pkgs.docker
       pkgs.linode-cli
+      pkgs.mongosh
       # Python
       pkgs.python3
       pkgs.virtualenv

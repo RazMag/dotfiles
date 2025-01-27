@@ -27,6 +27,9 @@
   # Homebrew packages
   homebrew = {
     enable = true;
+    taps = [
+      "razm-neosec/brew-tap"
+    ];
     casks = [
       "meetingbar"
       "proton-pass"
@@ -35,7 +38,7 @@
       "karabiner-elements"
       "zen-browser"
       "eloston-chromium"
-      "nosqlbooster-for-mongodb"
+      "razm-neosec/brew-tap/nosqlbooster-for-mongodb@7.1.21"
       "windows-app"
       "ghostty"
     ];
@@ -67,6 +70,7 @@
         "/Applications/Microsoft Outlook.app"
         "/Users/rmagori/Applications/Home Manager Apps/Visual Studio Code.app"
         "/Users/rmagori/Applications/Home Manager Apps/WezTerm.app"
+        "/Users/rmagori/Applications/Home Manager Apps/Bruno.app"
         "/Users/rmagori/Applications/Home Manager Apps/Spotify.app"
         "/Applications/Proton Pass.app"
       ];

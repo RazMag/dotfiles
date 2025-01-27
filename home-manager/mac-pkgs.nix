@@ -10,6 +10,7 @@ if builtins.elem "mac" attributes then {
       pkgs.colima # Docker runtime
       pkgs.postman
       pkgs.bun
+      pkgs.bruno
     ];
   };
 }
