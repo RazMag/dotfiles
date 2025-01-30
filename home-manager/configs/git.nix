@@ -9,5 +9,8 @@
       else
         "46993372+RazMag@users.noreply.github.com";
     userName = if builtins.elem "work" attributes then "Raz Magori" else "razmag";
+    extraConfig = {
+      init.defaultBranch = "main";
+    };
   };
 }
