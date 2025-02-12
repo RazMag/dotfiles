@@ -25,6 +25,7 @@
       pkgs.docker
       pkgs.linode-cli
       pkgs.mongosh
+      pkgs.typescript
       # Python
       pkgs.python3
       pkgs.virtualenv
