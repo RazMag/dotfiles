@@ -40,7 +40,8 @@
       "eloston-chromium"
       "razm-neosec/brew-tap/nosqlbooster-for-mongodb@7.1.21"
       "windows-app"
-      "ghostty"
+      "alt-tab"
+      "raycast"
     ];
     brews = [
       "node"
