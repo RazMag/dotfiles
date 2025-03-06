@@ -26,6 +26,7 @@
       pkgs.linode-cli
       pkgs.mongosh
       pkgs.typescript
+      pkgs.ollama
       # Python
       pkgs.python3
       pkgs.virtualenv
