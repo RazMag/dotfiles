@@ -1,6 +1,7 @@
 { config, pkgs, ... }:
 
 {
+  system.primaryUser = "rmagori";
   # Auto upgrade nix package and the daemon service.
   nix.enable = true;
   nix = {
@@ -36,7 +37,7 @@
       "fork"
       "middleclick"
       "karabiner-elements"
-      "zen-browser"
+      "zen"
       "eloston-chromium"
       "razm-neosec/brew-tap/nosqlbooster-for-mongodb@7.1.21"
       "windows-app"
@@ -45,6 +46,10 @@
     ];
     brews = [
       "node"
+      {
+        name = "colima";
+        start_service = true;
+      }
     ];
     onActivation = {
       cleanup = "zap";
@@ -65,7 +70,7 @@
       tilesize = 45;
       magnification = false;
       persistent-apps = [
-        "/Applications/Zen Browser.app"
+        "/Applications/Zen.app"
         "/Applications/Webex.app"
         "/Applications/Slack.app"
         "/Applications/Microsoft Outlook.app"

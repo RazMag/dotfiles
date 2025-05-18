@@ -29,6 +29,11 @@
         else
           "sudo nixos-rebuild switch --flake ~/.config/nix#${flakeName}";
       ".." = "cd ..";
+      update =
+        if builtins.elem "mac" attributes then
+          "nix flake update --flake \"/Users/rmagori/.config/nix\""
+        else
+          "";
     };
   };
 }

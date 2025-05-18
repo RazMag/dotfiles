@@ -5,11 +5,11 @@ if builtins.elem "mac" attributes then {
     packages = [
       pkgs.ice-bar # Top bar organisation
       pkgs.rectangle # Window manager
-      pkgs.jetbrains.pycharm-professional # Work IDE
-      pkgs.colima # Docker runtime
+      # pkgs.jetbrains.pycharm-professional # Work IDE
       pkgs.postman
       pkgs.bun
       pkgs.bruno
+      pkgs.appflowy
     ];
   };
 }

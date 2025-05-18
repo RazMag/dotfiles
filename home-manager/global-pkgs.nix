@@ -28,7 +28,8 @@
       pkgs.typescript
       pkgs.ollama
       # Python
-      pkgs.python3
+      pkgs.python312Full
+      pkgs.python312Packages.ipython
       pkgs.virtualenv
     ];
   };
