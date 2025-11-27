@@ -6,9 +6,12 @@ source /usr/share/cachyos-fish-config/cachyos-config.fish
 #    # smth smth
 #end
 
-# Interactive block
-if status is-interactive
+if status --is-interactive
+    # Aliases
     alias hx="helix"
+    alias cat="bat"
+
+    # Integrations
     atuin init fish | source
     zoxide init fish --cmd cd | source
 end
