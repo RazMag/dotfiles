@@ -1,6 +1,6 @@
 
 confirm-before-quit = false
-theme = "dracula"
+theme = "breeze"
 
 [cursor]
 shape = 'beam'
