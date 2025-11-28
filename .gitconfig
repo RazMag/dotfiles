@@ -1,0 +1,7 @@
+[user]
+	email = 46993372+RazMag@users.noreply.github.com
+	name = razmag
+[commit]
+	gpgsign = true
+[init]
+	defaultBranch = main
